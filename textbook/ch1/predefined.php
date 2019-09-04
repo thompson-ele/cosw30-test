@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Predefined Variables - TESTING GITHUB CREDENTIALS</title>
+        <title>Predefined Variables</title>
     </head>
     <body>
         <?php # Script 1.5 - predefined.php
