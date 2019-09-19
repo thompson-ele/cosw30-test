@@ -24,7 +24,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $newParagraph = [];
         
         // Randomly select a word and add it to the new array
-        for($i = 0; $i < 50; $i++) {
+        // Note: for the internal for loop notice that I'm using the 
+        // variable $j instead of $i. If I used $i again in this loop
+        // it would mess with the outer loop so to avoid that I give
+        // it a different name
+        for($j = 0; $j < 50; $j++) {
             // array_rand() returns a random index in the array
             $randomKey = array_rand($wordsArray);
             // You can use the [] or array_push() to add a value
