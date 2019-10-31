@@ -35,18 +35,19 @@ if($result) {
     <title>My First CRUD</title>
 </head>
 <body>
+    <h1>Create a New User</h1>
     <form action="crud.php" method="POST">
         <label for="first_name">First Name</label>
-        <input type="text" id="first_name" name="first_name">
+        <input type="text" id="first_name" name="first_name"><br>
 
         <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" name="last_name">
+        <input type="text" id="last_name" name="last_name"><br>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email"><br>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password"><br>
 
         <!--Add a second password input so the user has to retype their password -->
 
