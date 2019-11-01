@@ -65,6 +65,7 @@ if($result) {
             </tr>
         </thead>
         <tbody>
+            <?php // You will be adding a forEach loop here to output the users ?>
             <tr>
                 <td></td>
                 <td></td>
