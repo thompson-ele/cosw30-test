@@ -21,9 +21,9 @@ $result = mysqli_query($connection, $query);
 
 // Check if the database returned anything
 if($result) {
-    while($row = mysqli_fetch_array($result)){
-        // Output the results
-    }
+    // If the database query was successful, store
+    // the array of users into a variable
+    $rows = mysqli_fetch_all($result);
 } else {
     // Output an error
 }
