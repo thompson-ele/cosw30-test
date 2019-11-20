@@ -1,6 +1,6 @@
 <?php
 // Add the database connection
-include('database.php');
+include('database_finished.php');
 /*
 *   CHECK IF THE FORM HAS BEEN SUBMITTED AND INSERT
 *   NEW USER INTO THE DATABASE
@@ -77,6 +77,7 @@ if($result) {
                 <th>Last Name</th>
                 <th>Email</th>
                 <th>Password</th>
+                <th>Edit</th>
             </tr>
         </thead>
         <tbody>
@@ -87,6 +88,7 @@ if($result) {
                 <td>'.$row['last_name'].'</td>
                 <td>'.$row['email'].'</td>
                 <td>'.$row['password'].'</td>
+                <td><a href="update_finished.php?id='.$row['user_id'].'">Edit</a></td>
               </tr>';
         }
         ?>
